@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TRINETRA 360 - Command Centre</title>
+
+<link rel="stylesheet" href="css/dashboard.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ================= TOP BAR ================= -->
+
+<header class="topbar">
+
+<div class="logo">
+
+🛡️ <span>TRINETRA 360</span>
+
+</div>
+
+<div class="topcenter">
+
+Government of India | Ministry of Home Affairs
+
+</div>
+
+<div class="topright">
+
+🟢 Secure Network
+
+|
+
+Emergency 112
+
+|
+
+<span id="clock"></span>
+
+</div>
+
+</header>
+
+<!-- ================= SIDEBAR ================= -->
+
+<div class="sidebar">
+
+<h2>COMMAND</h2>
+
+<ul>
+
+<li class="active">🏠 Dashboard</li>
+
+<li>📞 Live Calls</li>
+
+<li>🚨 Incidents</li>
+
+<li>🚓 Dispatch</li>
+
+<li>🤖 DRISHTI AI</li>
+
+<li>🛰 Analytics</li>
+
+<li>⚙ Settings</li>
+
+</ul>
+
+</div>
+
+<!-- ================= MAIN ================= -->
+
+<main>
+
+<h1>
+
+National Emergency Operations Centre
+
+</h1>
+
+<!-- ================= STATS ================= -->
+
+<section class="stats">
+
+<div class="card">
+
+<h2>12</h2>
+
+<p>Active Incidents</p>
+
+</div>
+
+<div class="card">
+
+<h2>84</h2>
+
+<p>Calls Today</p>
+
+</div>
+
+<div class="card">
+
+<h2>29</h2>
+
+<p>Units Active</p>
+
+</div>
+
+<div class="card">
+
+<h2>71</h2>
+
+<p>Resolved</p>
+
+</div>
+
+</section>
+
+<!-- ================= LIVE FEED ================= -->
+
+<div class="row">
+
+<section class="feed">
+
+<h2>🚨 Live Emergency Feed</h2>
+
+<div id="feed">
+
+<p>09:42 • Fire • Bengaluru</p>
+
+<p>09:39 • Accident • Mysuru</p>
+
+<p>09:33 • Medical • Chennai</p>
+
+</div>
+
+<button id="simulateCall">
+
+Simulate Incoming Call
+
+</button>
+
+</section>
+
+<section class="ai">
+
+<h2>🤖 DRISHTI AI</h2>
+
+<div id="aiOutput">
+
+System Ready...
+
+Awaiting Emergency Calls...
+
+</div>
+
+</section>
+
+</div>
+
+<!-- ================= MAP ================= -->
+
+<section class="mapPanel">
+
+<h2>
+
+🗺 National Situation Map
+
+</h2>
+
+<div class="map">
+
+<h1>🇮🇳</h1>
+
+<p>
+
+Interactive India Map
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ================= DISPATCH ================= -->
+
+<section class="dispatch">
+
+<h2>
+
+🚓 Dispatch Console
+
+</h2>
+
+<div class="dispatchGrid">
+
+<button class="dispatchBtn">
+
+🚓 Police
+
+</button>
+
+<button class="dispatchBtn">
+
+🚒 Fire
+
+</button>
+
+<button class="dispatchBtn">
+
+🚑 Ambulance
+
+</button>
+
+<button class="dispatchBtn">
+
+🛡 NDRF
+
+</button>
+
+</div>
+
+</section>
+
+</main>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}body{background:#071321;color:#fff}.topbar{position:fixed;top:0;left:0;width:100%;height:64px;background:#0b2342;display:flex;justify-content:space-between;align-items:center;padding:0 24px;border-bottom:2px solid #1d4f91}.sidebar{position:fixed;top:64px;left:0;width:240px;height:calc(100vh - 64px);background:#0e1c31;padding:20px}.sidebar ul{list-style:none}.sidebar li{padding:14px;margin:8px 0;background:#16263d;border-radius:10px}.sidebar .active,.sidebar li:hover{background:#2356b8}main{margin-left:240px;padding:90px 25px}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card,.feed,.ai,.mapPanel,.dispatch{background:#12233a;padding:20px;border-radius:14px;box-shadow:0 0 15px rgba(0,0,0,.35);margin-top:20px}.card{border-top:4px solid #00d26a}.card h2{font-size:40px;color:#78c8ff}.row{display:grid;grid-template-columns:2fr 1fr;gap:20px}#feed p{background:#1a3151;border-left:4px solid #ff4d4d;padding:10px;margin:8px 0;border-radius:6px}#aiOutput{background:#071321;padding:15px;border-radius:8px;min-height:140px;color:#7dffb3;font-family:Consolas,monospace}.map{height:360px;border:2px dashed #5aaeff;display:flex;justify-content:center;align-items:center;flex-direction:column;border-radius:12px}.dispatchGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.dispatchBtn,#simulateCall{padding:14px;border:none;border-radius:10px;background:#0b5ed7;color:#fff;font-weight:700}.dispatchBtn:hover,#simulateCall:hover{background:#1b78ff}
+/* ==========================
+   ANIMATIONS
+========================== */
+
+@keyframes fadeUp{
+
+0%{
+opacity:0;
+transform:translateY(30px);
+}
+
+100%{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+.card{
+
+animation:fadeUp .8s ease;
+
+}
+
+.feed{
+
+animation:fadeUp 1s ease;
+
+}
+
+.ai{
+
+animation:fadeUp 1.2s ease;
+
+}
+
+.mapPanel{
+
+animation:fadeUp 1.4s ease;
+
+}
+
+.dispatch{
+
+animation:fadeUp 1.6s ease;
+
+}
+@keyframes pulse{
+
+0%{
+
+box-shadow:0 0 10px #0088ff;
+
+}
+
+50%{
+
+box-shadow:0 0 25px #00c3ff;
+
+}
+
+100%{
+
+box-shadow:0 0 10px #0088ff;
+
+}
+
+}
+
+.ai{
+
+animation:pulse 3s infinite;
+
+}
+@keyframes blink{
+
+0%{
+
+opacity:1;
+
+}
+
+50%{
+
+opacity:.3;
+
+}
+
+100%{
+
+opacity:1;
+
+}
+
+}
+
+.topright{
+
+animation:blink 2s infinite;
+
+}
+.dispatchBtn{
+
+transition:.3s;
+
+}
+
+.dispatchBtn:hover{
+
+transform:scale(1.08);
+
+box-shadow:0 0 20px #0077ff;
+
+}

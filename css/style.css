@@ -1,0 +1,475 @@
+/* ======================================
+   TRINETRA 360
+   LANDING PAGE
+====================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+
+height:100vh;
+overflow:hidden;
+
+background:
+linear-gradient(rgba(4,15,35,.82),rgba(4,15,35,.82)),
+url("../images/background.jpg");
+
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+
+color:white;
+
+}
+
+/* Dark Overlay */
+
+.overlay{
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:
+radial-gradient(circle at center,
+rgba(0,120,255,.08),
+transparent 65%);
+
+pointer-events:none;
+
+}
+
+/* ===========================
+TOP BAR
+=========================== */
+
+.topbar{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:65px;
+
+padding:0 40px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+background:rgba(6,25,58,.88);
+
+backdrop-filter:blur(12px);
+
+border-bottom:1px solid rgba(255,255,255,.08);
+
+z-index:1000;
+
+}
+
+.left{
+
+font-size:15px;
+
+font-weight:600;
+
+letter-spacing:.4px;
+
+}
+
+.left span{
+
+margin:0 12px;
+
+color:#4da3ff;
+
+}
+
+.right{
+
+display:flex;
+
+gap:12px;
+
+align-items:center;
+
+font-size:15px;
+
+font-weight:500;
+
+}
+
+.right span{
+
+color:#89d5ff;
+
+}
+
+/* ===========================
+MAIN HERO
+=========================== */
+
+.hero{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding-top:70px;
+
+}
+
+/* ===========================
+GLASS PANEL
+=========================== */
+
+.glass{
+
+width:720px;
+
+padding:55px;
+
+text-align:center;
+
+border-radius:25px;
+
+background:rgba(13,32,62,.55);
+
+backdrop-filter:blur(18px);
+
+border:1px solid rgba(255,255,255,.12);
+
+box-shadow:
+
+0 0 40px rgba(0,0,0,.45),
+
+0 0 80px rgba(0,119,255,.10);
+
+}
+
+/* ===========================
+EMBLEM
+=========================== */
+
+.emblem{
+
+width:130px;
+
+margin-bottom:20px;
+
+filter:drop-shadow(0 0 15px rgba(255,255,255,.2));
+
+}
+
+/* ===========================
+TEXT
+=========================== */
+
+.glass h1{
+
+font-size:60px;
+
+letter-spacing:4px;
+
+margin-bottom:10px;
+
+color:white;
+
+}
+
+.glass h2{
+
+font-size:24px;
+
+font-weight:400;
+
+color:#b9d9ff;
+
+margin-bottom:18px;
+
+}
+
+.glass p{
+
+font-size:18px;
+
+color:#d8e7ff;
+
+margin-bottom:28px;
+
+}
+
+/* ===========================
+STATUS
+=========================== */
+
+.status{
+
+display:inline-flex;
+
+align-items:center;
+
+gap:12px;
+
+padding:14px 24px;
+
+border-radius:50px;
+
+background:rgba(0,255,120,.08);
+
+border:1px solid rgba(0,255,120,.25);
+
+margin-bottom:35px;
+
+font-size:16px;
+
+}
+
+.dot{
+
+width:14px;
+
+height:14px;
+
+background:#00ff73;
+
+border-radius:50%;
+
+box-shadow:0 0 18px #00ff73;
+
+animation:pulse 1.5s infinite;
+
+}
+
+@keyframes pulse{
+
+0%{
+
+transform:scale(1);
+
+opacity:1;
+
+}
+
+50%{
+
+transform:scale(1.4);
+
+opacity:.5;
+
+}
+
+100%{
+
+transform:scale(1);
+
+opacity:1;
+
+}
+
+}
+
+/* ===========================
+LOGIN BUTTON
+=========================== */
+
+#login{
+
+display:block;
+
+margin:0 auto;
+
+margin-top:15px;
+
+padding:18px 55px;
+
+font-size:20px;
+
+font-weight:700;
+
+border:none;
+
+border-radius:60px;
+
+cursor:pointer;
+
+color:white;
+
+background:
+
+linear-gradient(90deg,#0b5ed7,#1976ff);
+
+transition:.35s;
+
+box-shadow:0 0 25px rgba(25,118,255,.35);
+
+}
+
+#login:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 0 45px rgba(25,118,255,.65);
+
+}
+
+/* ===========================
+FOOTER
+=========================== */
+
+.footer{
+
+margin-top:35px;
+
+font-size:15px;
+
+letter-spacing:2px;
+
+color:#89d5ff;
+
+text-transform:uppercase;
+
+}
+
+/* ===========================
+RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+.glass{
+
+width:92%;
+
+padding:35px;
+
+}
+
+.glass h1{
+
+font-size:42px;
+
+}
+
+.glass h2{
+
+font-size:20px;
+
+}
+
+.emblem{
+
+width:90px;
+
+}
+
+.topbar{
+
+padding:0 15px;
+
+font-size:12px;
+
+}
+
+.left,
+.right{
+
+font-size:12px;
+
+}
+
+}
+#loadingScreen{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+background:#061423;
+
+display:none;
+
+justify-content:center;
+
+align-items:center;
+
+z-index:9999;
+
+}
+
+.loaderBox{
+
+text-align:center;
+
+color:white;
+
+}
+
+.bar{
+
+width:350px;
+
+height:10px;
+
+background:#333;
+
+margin-top:20px;
+
+border-radius:20px;
+
+overflow:hidden;
+
+}
+
+.progress{
+
+height:100%;
+
+width:0;
+
+background:#00d26a;
+
+animation:load 3s linear forwards;
+
+}
+
+@keyframes load{
+
+from{
+
+width:0;
+
+}
+
+to{
+
+width:100%;
+
+}
+
+}
