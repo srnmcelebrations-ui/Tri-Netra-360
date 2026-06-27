@@ -3,234 +3,256 @@
 
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
 
-<title>TRINETRA 360 - Command Centre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="css/dashboard.css">
+    <title>TRINETRA 360 | Dashboard</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-<!-- ================= TOP BAR ================= -->
+    <!-- Background -->
+    <div class="background"></div>
 
-<header class="topbar">
+    <!-- Header -->
 
-<div class="logo">
+    <header class="topBar">
 
-🛡️ <span>TRINETRA 360</span>
+        <div class="govHeader">
 
-</div>
+            <img src="images/emblem.png" class="govLogo">
 
-<div class="topcenter">
+            <div>
 
-Government of India | Ministry of Home Affairs
+                <h1>GOVERNMENT OF INDIA</h1>
 
-</div>
+                <h3>Ministry of Home Affairs</h3>
 
-<div class="topright">
+                <p>112 National Emergency Response Command Centre</p>
 
-🟢 Secure Network
+            </div>
 
-|
+        </div>
 
-Emergency 112
+        <div class="topRight">
 
-|
+            <div id="clock"></div>
 
-<span id="clock"></span>
+            <span>Secure Government Network</span>
 
-</div>
+        </div>
 
-</header>
+    </header>
 
-<!-- ================= SIDEBAR ================= -->
+    <div class="headerRibbon"></div>
 
-<div class="sidebar">
+    <!-- Hero -->
 
-<h2>COMMAND</h2>
+    <section class="hero">
 
-<ul>
+        <h1>TRINETRA 360</h1>
 
-<li class="active">🏠 Dashboard</li>
+        <h2>National Emergency Response Command Centre</h2>
 
-<li>📞 Live Calls</li>
+        <p>
 
-<li>🚨 Incidents</li>
+            Welcome, Operator.
 
-<li>🚓 Dispatch</li>
+            Drishti AI is monitoring the National Emergency Grid.
 
-<li>🤖 DRISHTI AI</li>
+            No active emergency incidents have been detected.
 
-<li>🛰 Analytics</li>
+        </p>
 
-<li>⚙ Settings</li>
+    </section>
 
-</ul>
+    <!-- Main Grid -->
 
-</div>
+    <section class="dashboardGrid">
 
-<!-- ================= MAIN ================= -->
+        <!-- LEFT -->
 
-<main>
+        <div class="leftColumn">
 
-<h1>
+            <div class="panel">
 
-National Emergency Operations Centre
+                <h2>Operator Session</h2>
 
-</h1>
+                <div class="infoRow">
 
-<!-- ================= STATS ================= -->
+                    <span>Operator ID</span>
 
-<section class="stats">
+                    <strong>TR36001</strong>
 
-<div class="card">
+                </div>
 
-<h2>12</h2>
+                <div class="infoRow">
 
-<p>Active Incidents</p>
+                    <span>Security Level</span>
 
-</div>
+                    <strong>LEVEL III</strong>
 
-<div class="card">
+                </div>
 
-<h2>84</h2>
+                <div class="infoRow">
 
-<p>Calls Today</p>
+                    <span>Status</span>
 
-</div>
+                    <strong class="online">ACTIVE</strong>
 
-<div class="card">
+                </div>
 
-<h2>29</h2>
+            </div>
 
-<p>Units Active</p>
+            <div class="panel">
 
-</div>
+                <h2>Recent System Activity</h2>
 
-<div class="card">
+                <ul class="activity">
 
-<h2>71</h2>
+                    <li>Operator authenticated successfully</li>
 
-<p>Resolved</p>
+                    <li>Secure network established</li>
 
-</div>
+                    <li>National Emergency Grid synchronised</li>
 
-</section>
+                    <li>Drishti AI initialised</li>
 
-<!-- ================= LIVE FEED ================= -->
+                    <li>Monitoring services active</li>
 
-<div class="row">
+                </ul>
 
-<section class="feed">
+            </div>
 
-<h2>🚨 Live Emergency Feed</h2>
+        </div>
 
-<div id="feed">
+        <!-- CENTER -->
 
-<p>09:42 • Fire • Bengaluru</p>
+        <div class="centerColumn">
 
-<p>09:39 • Accident • Mysuru</p>
+            <div class="cards">
 
-<p>09:33 • Medical • Chennai</p>
+                <div class="card">
 
-</div>
+                    <h3>System Status</h3>
 
-<button id="simulateCall">
+                    <h1>ONLINE</h1>
 
-Simulate Incoming Call
+                    <p>All core services operational.</p>
 
-</button>
+                </div>
 
-</section>
+                <div class="card">
 
-<section class="ai">
+                    <h3>Drishti AI</h3>
 
-<h2>🤖 DRISHTI AI</h2>
+                    <h1>READY</h1>
 
-<div id="aiOutput">
+                    <p>Awaiting emergency requests.</p>
 
-System Ready...
+                </div>
 
-Awaiting Emergency Calls...
+                <div class="card">
 
-</div>
+                    <h3>Emergency Grid</h3>
 
-</section>
+                    <h1>CONNECTED</h1>
 
-</div>
+                    <p>National database synchronised.</p>
 
-<!-- ================= MAP ================= -->
+                </div>
 
-<section class="mapPanel">
+                <div class="card">
 
-<h2>
+                    <h3>Active Units</h3>
 
-🗺 National Situation Map
+                    <h1>275</h1>
 
-</h2>
+                    <p>Police • Fire • Ambulance</p>
 
-<div class="map">
+                </div>
 
-<h1>🇮🇳</h1>
+            </div>
 
-<p>
+            <div class="simulate">
 
-Interactive India Map
+                <button onclick="simulateCall()">
 
-</p>
+                    SIMULATE EMERGENCY CALL
 
-</div>
+                </button>
 
-</section>
+            </div>
 
-<!-- ================= DISPATCH ================= -->
+        </div>
 
-<section class="dispatch">
+        <!-- RIGHT -->
 
-<h2>
+        <div class="rightColumn">
 
-🚓 Dispatch Console
+            <div class="panel">
 
-</h2>
+                <h2>Drishti AI</h2>
 
-<div class="dispatchGrid">
+                <div class="aiStatus">
 
-<button class="dispatchBtn">
+                    <div class="statusLight"></div>
 
-🚓 Police
+                    <span>ONLINE</span>
 
-</button>
+                </div>
 
-<button class="dispatchBtn">
+                <p>
 
-🚒 Fire
+                    Monitoring National Emergency Grid.
 
-</button>
+                    Awaiting incoming emergency requests.
 
-<button class="dispatchBtn">
+                </p>
 
-🚑 Ambulance
+            </div>
 
-</button>
+            <div class="panel">
 
-<button class="dispatchBtn">
+                <h2>National Coverage</h2>
 
-🛡 NDRF
+                <img src="images/india-map.png" class="indiaMap">
 
-</button>
+                <p class="mapText">
 
-</div>
+                    Connected Across India
 
-</section>
+                </p>
 
-</main>
+            </div>
 
-<script src="js/dashboard.js"></script>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+
+            TRINETRA 360 • Ministry of Home Affairs • Prototype developed by Mokshith GS
+
+        </p>
+
+    </footer>
+
+    <script src="js/dashboard.js"></script>
 
 </body>
 

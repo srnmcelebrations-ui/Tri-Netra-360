@@ -96,85 +96,53 @@ A Prototype Developed by Mokshith GS
 
 <div class="loginCard">
 
-<div class="loginHeader">
+    <div class="loginHeader">
 
-<div class="icon">
+        <div class="icon">🔒</div>
 
-🔒
+        <div>
+            <h2>SECURE OPERATOR LOGIN</h2>
+            <p>Government Secure Access Portal</p>
+        </div>
 
-</div>
+    </div>
 
-<div>
+    <form onsubmit="login(); return false;">
 
-<h2>SECURE OPERATOR LOGIN</h2>
+        <label>Operator ID</label>
 
-<p>Government Secure Access Portal</p>
+        <select id="operator" required>
 
-</div>
+            <option value="">Select Operator ID</option>
 
-</div>
+            <option value="TR36001">TR36001</option>
 
-<label>
+            <option value="TR36002">TR36002</option>
 
-Operator ID
+            <option value="TR36003">TR36003</option>
 
-</label>
+        </select>
 
-<select id="operator">
+        <label>Password</label>
 
-<option>Select Operator ID</option>
+        <input
+            type="password"
+            id="password"
+            placeholder="Enter Password"
+            required
+        >
 
-<option>TR36001</option>
+        <button type="submit">
+            LOGIN TO SYSTEM
+        </button>
 
-<option>TR36002</option>
+    </form>
 
-<option>TR36003</option>
-
-</select>
-
-<label>
-
-Password
-
-</label>
-
-<input
-
-type="password"
-
-id="password"
-
-placeholder="Enter Password"
-
->
-
-<button onclick="login()">
-
-LOGIN TO SYSTEM
-
-</button>
-
-<div class="loading" id="loading">
-
-Authenticating...
+    <div class="loading" id="loading">
+        Authenticating...
+    </div>
 
 </div>
-
-</div>
-
-<!-- Valid IDs -->
-
-<div class="ids">
-
-<div>TR36001</div>
-
-<div>TR36002</div>
-
-<div>TR36003</div>
-
-</div>
-
-</section>
 
 <!-- Footer -->
 

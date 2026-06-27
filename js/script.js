@@ -21,20 +21,32 @@ setInterval(updateClock,1000);
 updateClock();
 
 
-const login=document.getElementById("login");
+function login(){
 
-if(login){
+    const id=document.getElementById("operator").value;
 
-login.onclick=function(){
+    const pass=document.getElementById("password").value;
 
-document.getElementById("loadingScreen").style.display="flex";
+    const loading=document.getElementById("loading");
 
-setTimeout(()=>{
+    const validIDs=["TR36001","TR36002","TR36003"];
 
-window.location.href="dashboard.html";
+    if(validIDs.includes(id) && pass==="SJV#1"){
 
-},3000);
+        loading.style.display="block";
 
-}
+        setTimeout(function(){
+
+            window.location.href="dashboard.html";
+
+        },2500);
+
+    }
+
+    else{
+
+        alert("Invalid Operator ID or Password");
+
+    }
 
 }
