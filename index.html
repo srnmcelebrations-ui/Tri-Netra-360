@@ -1,121 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <div class="gov-header">
-
-    <h2>🇮🇳 Government of India</h2>
-
-    <h3>Ministry of Home Affairs</h3>
-
-    <p>National Emergency Management Division</p>
-
-</div>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>TRINETRA 360</title>
+<title>TRINETRA 360 | Ministry of Home Affairs</title>
 
 <link rel="stylesheet" href="css/style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 </head>
-<div id="loadingScreen">
-
-<div class="loaderBox">
-
-<h1>TRINETRA 360</h1>
-
-<p id="loadingText">
-
-Authenticating Operator...
-
-</p>
-
-<div class="bar">
-
-<div class="progress"></div>
-
-</div>
-
-</div>
-
-</div>
 
 <body>
 
 <!-- Background -->
 
-<div class="overlay"></div>
+<div class="background"></div>
 
-<!-- Top Government Bar -->
+<div class="chakra"></div>
 
-<div class="topbar">
+<div class="network"></div>
 
-<div class="left">
+<!-- Top Bar -->
 
-🇮🇳 Government of India
+<header class="topBar">
 
-<span>|</span>
+<div class="logo112">
 
-Ministry of Home Affairs
-
-</div>
-
-<div class="right">
-
-🟢 National Emergency Grid Online
-
-<span>|</span>
-
-<span id="clock"></span>
+<img src="images/112.png">
 
 </div>
 
+<div class="timeBox">
+
+<p>LIVE TIME</p>
+
+<h2 id="clock"></h2>
+
+<span id="date"></span>
+
 </div>
 
-<!-- Main Landing -->
+</header>
+
+<!-- Main -->
 
 <section class="hero">
 
-<div class="glass">
-
 <img src="images/emblem.png" class="emblem">
 
-<h1>TRINETRA 360</h1>
+<h2>GOVERNMENT OF INDIA</h2>
 
-<h2>Integrated National Emergency Response System</h2>
+<h3>MINISTRY OF HOME AFFAIRS</h3>
 
-<p>
+<p class="prototype">
 
-Observe • Analyze • Respond • Protect
+112 Call Centre Database Prototype
 
 </p>
 
-<div class="status">
+<h1>
 
-<div class="dot"></div>
+TRINETRA <span>360</span>
 
-Secure Government Network Connected
+</h1>
+
+<div class="line">
+
+<div></div>
+
+<p>
+
+Integrated National Emergency Response System
+
+</p>
+
+<div></div>
 
 </div>
 
-<button id="login">
+<p class="credit">
 
-🔒 Secure Operator Login
+A Prototype Developed by Mokshith GS
+
+</p>
+
+<!-- Login Card -->
+
+<div class="loginCard">
+
+<div class="loginHeader">
+
+<div class="icon">
+
+🔒
+
+</div>
+
+<div>
+
+<h2>SECURE OPERATOR LOGIN</h2>
+
+<p>Government Secure Access Portal</p>
+
+</div>
+
+</div>
+
+<label>
+
+Operator ID
+
+</label>
+
+<select id="operator">
+
+<option>Select Operator ID</option>
+
+<option>TR36001</option>
+
+<option>TR36002</option>
+
+<option>TR36003</option>
+
+</select>
+
+<label>
+
+Password
+
+</label>
+
+<input
+
+type="password"
+
+id="password"
+
+placeholder="Enter Password"
+
+>
+
+<button onclick="login()">
+
+LOGIN TO SYSTEM
 
 </button>
 
-<div class="footer">
+<div class="loading" id="loading">
 
-National Emergency Operations Centre
+Authenticating...
 
 </div>
+
+</div>
+
+<!-- Valid IDs -->
+
+<div class="ids">
+
+<div>TR36001</div>
+
+<div>TR36002</div>
+
+<div>TR36003</div>
 
 </div>
 
 </section>
+
+<!-- Footer -->
+
+<footer>
+
+<div>
+
+<h3>SECURE SYSTEM</h3>
+
+<p>All systems encrypted</p>
+
+</div>
+
+<div>
+
+<h3>NATIONAL EMERGENCY GRID</h3>
+
+<p>Connected & Monitored</p>
+
+</div>
+
+<div>
+
+<h3>SYSTEM STATUS</h3>
+
+<p class="online">
+
+🟢 ONLINE
+
+</p>
+
+</div>
+
+</footer>
 
 <script src="js/script.js"></script>
 
